@@ -1,0 +1,53 @@
+6x6 2d array
+
+111111
+000000
+111111
+000000
+111111
+000000
+
+[[111111], [000000], [111111], ...] --> lists in list
+
+hourglass
+
+list[1][]
+
+abc
+ d
+efg
+
+***
+list[0][0] + list[0][1] + list[0][2]) + (list[1][1] + list[2][0] + list[2][1] + list[2][2] --> sum
+increment all second indexes, until reach 4th element
+list[0][1] + list[0][2] + list[0][3] + list[1][2] + list[2][1] + list[2][2] + list[2][3] --> sum
+compare w previous sum, if larger, replace
+...
+list[0][3] + list[0][4] + list[0][5] + list[1][4] + list[2][3] + list[2][4] + list[2][5]
+compare w previous sum, if larger, replace
+
+increment each first index, reset second index to beginning
+list[1][0] + list[1][1] + list[1][2] + list[2][1] + list[3][0] + list[3][1] + list[3][2]
+
+last 
+list[3][0] +...+ list[4][2] + list[5][0] + ...
+***
+
+0/1/2-1-0/1/2
+1/2/3-2-1/2/3
+
+return another 2D array that contains all sum of 16 hourglass in original array
+
+pseudocode:
+
+given arr
+sum = 0
+for i in range(0,4):
+	for j in range(0,4):
+		theSum = list[i][j] + list[i][j+1] + list[i][j+2] + list[i+1] + list[i+2][j] + list[i+2][j+1] + list[i+2][j+2]
+		if(theSum > sum):
+			sum = theSum
+return sum
+
+
+
