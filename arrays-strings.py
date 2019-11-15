@@ -17,13 +17,13 @@ class IsUnique:
 			print(self.string)
 			print("String is unique")
 
-l = IsUnique('sensuke')
+l = IsUnique('mooooomin')
 l.checkUnique()
 
-l1 = IsUnique('sasuke')
+l1 = IsUnique('abcde fgh')
 l1.checkUnique()
 
-l2 = IsUnique('sen')
+l2 = IsUnique('')
 l2.checkUnique()
 
 l3 = IsUnique('unique')
