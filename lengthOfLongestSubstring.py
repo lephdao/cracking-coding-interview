@@ -1,8 +1,6 @@
 # draft code: https://pastebin.com/EcXcPPbd
 # link to problem: https://leetcode.com/articles/longest-substring-without-repeating-characters/
-
-
-def lengthOfLongestSubstring(self, s):
+def lengthOfLongestSubstring(s):
       if len(s) == 1:
           return 1
       if s == "" or s == " ":
