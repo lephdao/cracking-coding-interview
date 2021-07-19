@@ -1,5 +1,7 @@
-# Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
-# Input: 5 (101) --> Output: 2(010)
+'''
+	Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
+	Input: 5 (101) --> Output: 2(010)
+'''
 class Solution:
     def findComplement(self, num):
     	# convert num to a binary
